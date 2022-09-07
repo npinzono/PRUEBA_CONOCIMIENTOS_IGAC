@@ -10,7 +10,8 @@ TECNOLOGIAS USADAS PARA EL DESARROLLO DE ESTA PRUEBA:\
 DATOS A TENER EN CUENTA:\
 	* Debe estar instalado en la maquina donde se va a ejecutar Java, MySql, Angular CLI version 14.2.1. y npm.\
 	* La variable JAVA_HOME debe estar registrada en las variables de entorno.\
-	* Validar que los puertos 8080 y 4200 esten libres.\\
+	* Validar que los puertos 8080 y 4200 esten libres.\
+	* Ingresar usuario con privilegios de edición y lectura para la base de datos.\\
 
 PASOS PARA SU EJECUCIÓN:\
 	* MySql:\
