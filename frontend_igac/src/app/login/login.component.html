@@ -1,0 +1,25 @@
+<div id="parent">
+    <div id="child" class="flex align-items-center justify-content-center card-container">
+        <p-card>
+            <ng-template class="m-3" pTemplate="header">
+                <div class="m-3">
+                    <h1>¡Bienvenido!</h1>
+                </div>
+            </ng-template>
+            <div class="formgrid grid">
+                <div class="p-inputgroup m-3">
+                    <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                    <input type="text" pInputText placeholder="Núm. identificación" [(ngModel)]="loginData.id" (keypress)="enter($event)" pInputText>         
+                </div>            
+                <div class="p-inputgroup m-3">
+                    <span class="p-inputgroup-addon"><i class="pi pi-lock"></i></span>
+                    <input type="text" pInputText placeholder="Contraseña" [(ngModel)]="loginData.password" (keypress)="enter($event)" pInputText>         
+                </div>
+            </div>
+            <ng-template pTemplate="footer">
+                <button pButton type="button" label="Iniciar Sesión" class="p-button-lg p-button-success" (click)="login()"></button>
+            </ng-template>
+        </p-card>
+    </div>
+</div>
+<p-toast></p-toast>
